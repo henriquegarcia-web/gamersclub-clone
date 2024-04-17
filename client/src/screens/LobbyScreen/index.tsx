@@ -1,5 +1,7 @@
 import * as S from './styles'
 
+import { Header } from '@/components'
+
 // import { useGetTemplate } from '@/hooks/data/useGetTemplate'
 
 interface ITemplateScreen {}
@@ -12,7 +14,11 @@ const TemplateScreen = ({}: ITemplateScreen) => {
   //   isLoading
   // } = useGetTemplate()
 
-  return <S.TemplateScreen></S.TemplateScreen>
+  return (
+    <S.TemplateScreen>
+      <Header />
+    </S.TemplateScreen>
+  )
 }
 
 export default TemplateScreen

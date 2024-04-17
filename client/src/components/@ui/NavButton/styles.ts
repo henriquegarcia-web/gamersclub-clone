@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
-export const TemplateComponent = styled.div`
+export const NavButton = styled.div`
   display: flex;
 `
