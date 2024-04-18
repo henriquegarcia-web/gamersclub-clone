@@ -29,19 +29,25 @@ const LobbyScreen = ({}: ILobbyScreen) => {
   ]
 
   return (
-    <S.LobbyScreen>
-      <Header />
-      <S.LobbyScreenContent>
-        <S.LobbyScreenContentWrapper>
-          <LobbyHeader />
-          <S.LobbyListWrapper>
-            {lobbysData.map((lobby: ILobby) => (
-              <LobbyCard key={lobby.lobbyId} lobby={lobby} />
-            ))}
-          </S.LobbyListWrapper>
-        </S.LobbyScreenContentWrapper>
-      </S.LobbyScreenContent>
-    </S.LobbyScreen>
+    <>
+      <S.LobbyScreen>
+        <Header />
+        <S.LobbyScreenContent>
+          <S.LobbyScreenContentWrapper>
+            <LobbyHeader />
+            <S.LobbyListWrapper>
+              {lobbysData.map((lobby: ILobby) => (
+                <LobbyCard key={lobby.lobbyId} lobby={lobby} />
+              ))}
+            </S.LobbyListWrapper>
+          </S.LobbyScreenContentWrapper>
+        </S.LobbyScreenContent>
+      </S.LobbyScreen>
+
+      <S.LobbyScreenMobile>
+        Visualização disponível apenas para desktop.
+      </S.LobbyScreenMobile>
+    </>
   )
 }
 

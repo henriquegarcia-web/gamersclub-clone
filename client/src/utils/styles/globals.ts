@@ -4,7 +4,7 @@ import { Colors } from './colors'
 // import Fonts from "../styles/fonts";
 
 export const responsiveLargeDesktop = '1400px'
-export const responsiveDesktop = '1000px'
+export const responsiveDesktop = '1160px'
 export const responsiveTablet = '760px'
 export const responsiveMobile = '500px'
 
