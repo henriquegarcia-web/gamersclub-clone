@@ -10,6 +10,7 @@ import Header from './Header'
 import LobbyCard from './LobbyCard'
 import LeaderBoard from './LeaderBoard'
 import UserInfos from './UserInfos'
+import LobbyHeader from './LobbyHeader'
 
 export {
   Button,
@@ -22,5 +23,6 @@ export {
   Header,
   LobbyCard,
   LeaderBoard,
-  UserInfos
+  UserInfos,
+  LobbyHeader
 }
