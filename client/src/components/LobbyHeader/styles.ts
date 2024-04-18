@@ -4,7 +4,7 @@ import { Colors } from '@/utils/styles/colors'
 export const LobbyHeader = styled.div`
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 20px;
   width: 100%;
   padding: 25px 0;
 `
@@ -156,7 +156,7 @@ export const LobbyMainFilter = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  padding: 30px;
+  padding: 25px 30px;
 `
 
 export const LobbyMainFilterContent = styled.div`
