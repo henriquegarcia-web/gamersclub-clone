@@ -1,9 +1,11 @@
 import * as S from './styles'
 
-interface ILevelTag {}
+interface ILevelTag {
+  userLevel: number
+}
 
-const LevelTag = ({}: ILevelTag) => {
-  return <S.LevelTag></S.LevelTag>
+const LevelTag = ({ userLevel }: ILevelTag) => {
+  return <S.LevelTag>{userLevel}</S.LevelTag>
 }
 
 export default LevelTag
