@@ -2,27 +2,27 @@ import { useState } from 'react'
 
 import * as S from './styles'
 
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
-interface ISwitch {}
+interface IInputSwitch {}
 
-const Switch = ({}: ISwitch) => {
+const InputSwitch = ({}: IInputSwitch) => {
   const [isActive, setIsActive] = useState(false)
 
   const handleToggleActive = () => setIsActive(!isActive)
 
   return (
-    <S.Switch onClick={handleToggleActive}>
+    <S.InputSwitch onClick={handleToggleActive}>
       <motion.div
         initial={{ opacity: 1, x: 20 }}
         animate={{ opacity: 1, x: isActive ? 20 : 0 }}
         exit={{ opacity: 1, x: 20 }}
         transition={{ duration: 0.3 }}
       >
-        <S.SwitchIndicator />
+        <S.InputSwitchIndicator />
       </motion.div>
-    </S.Switch>
+    </S.InputSwitch>
   )
 }
 
-export default Switch
+export default InputSwitch
