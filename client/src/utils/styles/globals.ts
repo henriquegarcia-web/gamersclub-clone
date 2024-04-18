@@ -11,6 +11,8 @@ export const responsiveMobile = '500px'
 export const mainHeaderHeight = '80px'
 export const topHeaderHeight = '50px'
 
+export const contentWrapper = '1000px'
+
 const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 14px;

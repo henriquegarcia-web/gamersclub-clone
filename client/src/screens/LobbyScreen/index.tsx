@@ -1,12 +1,12 @@
 import * as S from './styles'
 
-import { Header } from '@/components'
+import { Header, LobbyHeader } from '@/components'
 
 // import { useGetTemplate } from '@/hooks/data/useGetTemplate'
 
-interface ITemplateScreen {}
+interface ILobbyScreen {}
 
-const TemplateScreen = ({}: ITemplateScreen) => {
+const LobbyScreen = ({}: ILobbyScreen) => {
   // const {
   //   data: dataTemplate,
   //   error: errorTemplate,
@@ -15,10 +15,15 @@ const TemplateScreen = ({}: ITemplateScreen) => {
   // } = useGetTemplate()
 
   return (
-    <S.TemplateScreen>
+    <S.LobbyScreen>
       <Header />
-    </S.TemplateScreen>
+      <S.LobbyScreenContent>
+        <S.LobbyScreenContentWrapper>
+          <LobbyHeader />
+        </S.LobbyScreenContentWrapper>
+      </S.LobbyScreenContent>
+    </S.LobbyScreen>
   )
 }
 
-export default TemplateScreen
+export default LobbyScreen
