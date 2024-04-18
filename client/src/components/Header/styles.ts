@@ -64,8 +64,55 @@ export const MainHeaderNavBar = styled.div`
 
 export const TopHeader = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
   width: 100%;
   height: ${topHeaderHeight};
+
+  background: linear-gradient(
+    90deg,
+    #1a75bf 4.9%,
+    #9a70ff 55.92%,
+    #c43e5a 99.09%
+  );
+
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    b {
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+    }
+
+    color: ${Colors.fontSecondary};
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    height: 28px;
+    border-radius: 15px;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.3s;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: ${Colors.brand};
+    background: ${Colors.primary};
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 `
 
 // ====================================== NAVBAR LOBBY

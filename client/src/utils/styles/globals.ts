@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
     /* font-family: "Baloo Paaji 2", sans-serif; */
     /* font-family: "Barlow", sans-serif; */
     /* font-family: "Open Sans", sans-serif; */
+    /* font-family: "Poppins", sans-serif; */
     font-family: "Teko", sans-serif;
     text-decoration: none;
     user-select: none;

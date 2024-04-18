@@ -35,7 +35,21 @@ export default Header
 // ====================================== TOP HEADER
 
 const TopHeader = () => {
-  return <S.TopHeader></S.TopHeader>
+  return (
+    <S.TopHeader>
+      <p>
+        <b>Você está jogando no modo gratuito.</b> Conheça nossas vantagens
+        exclusivas.
+      </p>
+      <a
+        href="https://gamersclub.com.br/subscriptions?src=subscriptionFreeBar"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button>Seja um assinante</button>
+      </a>
+    </S.TopHeader>
+  )
 }
 
 // ====================================== NAVBAR LOBBY
