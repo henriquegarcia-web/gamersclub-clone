@@ -1,9 +1,11 @@
 import * as S from './styles'
 
 import { LeaderBoard, NavButton, PlayButton, UserInfos } from '@/components'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import { TfiMenu } from 'react-icons/tfi'
 import { Icons } from '@/assets/icons'
+import { useState } from 'react'
 
 interface IHeader {}
 
@@ -39,6 +41,12 @@ const TopHeader = () => {
 // ====================================== NAVBAR LOBBY
 
 const NavBarLobby = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
+
+  const handleOpenMenu = () => setIsOpenMenu(true)
+  const handleCloseMenu = () => setIsOpenMenu(false)
+  const handleToggleMenu = () => setIsOpenMenu(!isOpenMenu)
+
   const hiddenIcon = (
     <img src="/icons/hidden.svg" alt="See All Icon" style={{ width: 18 }} />
   )
@@ -127,18 +135,28 @@ const NavBarLobby = () => {
           icon={hiddenIcon}
           selected
           label="Mais (5)"
-          onClick={() => {}}
+          onClick={handleToggleMenu}
         />
-        <S.NavBarLobbyMenuWrapper>
-          {navbarMenus.map((button, index) => (
-            <NavButton
-              key={index}
-              icon={button.icon}
-              label={button.label}
-              onClick={button.onClick}
-            />
-          ))}
-        </S.NavBarLobbyMenuWrapper>
+        <AnimatePresence>
+          {isOpenMenu && (
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 15 }}
+            >
+              <S.NavBarLobbyMenuWrapper>
+                {navbarMenus.map((button, index) => (
+                  <NavButton
+                    key={index}
+                    icon={button.icon}
+                    label={button.label}
+                    onClick={button.onClick}
+                  />
+                ))}
+              </S.NavBarLobbyMenuWrapper>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </S.NavBarLobbyMenuMobile>
     </S.NavBarLobby>
   )
