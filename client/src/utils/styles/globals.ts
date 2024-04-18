@@ -1,13 +1,15 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-import Colors from './colors'
+import { Colors } from './colors'
 // import Fonts from "../styles/fonts";
 
+export const responsiveLargeDesktop = '1400px'
 export const responsiveDesktop = '1000px'
 export const responsiveTablet = '760px'
 export const responsiveMobile = '500px'
 
-export const clientHeaderHeight = '70px'
+export const mainHeaderHeight = '80px'
+export const topHeaderHeight = '50px'
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -24,11 +26,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     border: none;
     outline: none;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     /* font-family: "Montserrat", sans-serif; */
     /* font-family: "Baloo Paaji 2", sans-serif; */
     /* font-family: "Barlow", sans-serif; */
     /* font-family: "Open Sans", sans-serif; */
+    font-family: "Teko", sans-serif;
     text-decoration: none;
     user-select: none;
 
