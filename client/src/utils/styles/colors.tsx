@@ -8,10 +8,13 @@ const Colors = {
   fontSecondary: '#fffffff2',
 
   brand: '#195aff',
+  brandLight: '#4d7fff',
   success: '#00c466',
   successLight: '#00de73',
   error: '#f34349',
+  errorLight: '#e3373d',
   warning: '#ffb733',
+  warningLight: '#fdac18',
 
   backgroundPrimary: '#141414',
   backgroundSecondary: '#1f1f1f',

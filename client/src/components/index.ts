@@ -5,7 +5,8 @@ import CountryFlag from './@ui/CountryFlag'
 import Indicator from './@ui/Indicator'
 import LevelTag from './@ui/LevelTag'
 import UserPicture from './@ui/UserPicture'
-import Switch from './@ui/Switch'
+import InputSwitch from './@ui/InputSwitch'
+import InputRadio from './@ui/InputRadio'
 
 import Header from './Header'
 import LobbyCard from './LobbyCard'
@@ -21,7 +22,8 @@ export {
   Indicator,
   LevelTag,
   UserPicture,
-  Switch,
+  InputSwitch,
+  InputRadio,
   Header,
   LobbyCard,
   LeaderBoard,

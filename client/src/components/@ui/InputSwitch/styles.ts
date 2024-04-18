@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Colors } from '@/utils/styles/colors'
 
-export const Switch = styled.button`
+export const InputSwitch = styled.button`
   position: relative;
   display: flex;
   width: 44px;
@@ -13,7 +13,7 @@ export const Switch = styled.button`
   border: 1px solid rgba(250, 249, 247, 0.08);
 `
 
-export const SwitchIndicator = styled.div`
+export const InputSwitchIndicator = styled.div`
   position: absolute;
   top: 3px;
   left: 3px;
