@@ -4,7 +4,9 @@ import PlayButton from './@ui/PlayButton'
 import CountryFlag from './@ui/CountryFlag'
 import Indicator from './@ui/Indicator'
 import LevelTag from './@ui/LevelTag'
+import LobbyLevelTag from './@ui/LobbyLevelTag'
 import UserPicture from './@ui/UserPicture'
+import LobbyUserPicture from './@ui/LobbyUserPicture'
 import InputSwitch from './@ui/InputSwitch'
 import InputRadio from './@ui/InputRadio'
 
@@ -21,7 +23,9 @@ export {
   CountryFlag,
   Indicator,
   LevelTag,
+  LobbyLevelTag,
   UserPicture,
+  LobbyUserPicture,
   InputSwitch,
   InputRadio,
   Header,

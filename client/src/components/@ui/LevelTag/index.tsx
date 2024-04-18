@@ -2,9 +2,10 @@ import * as S from './styles'
 
 interface ILevelTag {
   userLevel: number
+  large?: boolean
 }
 
-const LevelTag = ({ userLevel }: ILevelTag) => {
+const LevelTag = ({ userLevel, large = false }: ILevelTag) => {
   return <S.LevelTag>{userLevel}</S.LevelTag>
 }
 
