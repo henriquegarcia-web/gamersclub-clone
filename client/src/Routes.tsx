@@ -8,12 +8,12 @@ const AppRoutes = () => {
       <Routes>
         {/* =============================================================== */}
 
-        {/* <Route path="/" element={<Navigate to="/template" />} /> */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/" element={<Navigate to="/lobby" />} />
+        <Route path="*" element={<Navigate to="/lobby" />} />
 
         {/* =============================================================== */}
 
-        <Route path="/" element={<LobbyScreen />} />
+        <Route path="/lobby" element={<LobbyScreen />} />
 
         {/* =============================================================== */}
       </Routes>

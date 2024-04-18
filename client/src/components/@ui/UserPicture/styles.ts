@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const UserPicture = styled.div`
   display: flex;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   overflow: hidden;
 
