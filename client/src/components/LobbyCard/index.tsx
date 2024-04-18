@@ -18,7 +18,7 @@ const LobbyCard = ({ lobby }: ILobbyCard) => {
           <S.PremiumStamp>
             <img src="/icons/premium.svg" alt="Premium Icon" />
           </S.PremiumStamp>
-          <LobbyLevelTag lobbyLevel={15} />
+          <LobbyLevelTag lobbyLevel={lobby.lobbyLevel} />
           <S.VerifiedStamp>
             <img src="/icons/verified.svg" alt="Verified Icon" />
           </S.VerifiedStamp>
