@@ -1,7 +1,7 @@
 import { Icons } from '@/assets/icons'
 import * as S from './styles'
 
-import { Indicator } from '@/components'
+import { Indicator, Switch } from '@/components'
 
 interface ILobbyHeader {}
 
@@ -36,6 +36,10 @@ const LobbyHeader = ({}: ILobbyHeader) => {
             <b>Comprar</b>
           </S.GameActionContent>
         </S.GameAction>
+        <S.SwitchAction>
+          <p>Modo lite</p>
+          <Switch />
+        </S.SwitchAction>
       </S.LobbyHeaderActions>
     </S.LobbyHeader>
   )

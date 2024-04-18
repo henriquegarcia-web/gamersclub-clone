@@ -5,6 +5,7 @@ import CountryFlag from './@ui/CountryFlag'
 import Indicator from './@ui/Indicator'
 import LevelTag from './@ui/LevelTag'
 import UserPicture from './@ui/UserPicture'
+import Switch from './@ui/Switch'
 
 import Header from './Header'
 import LobbyCard from './LobbyCard'
@@ -20,6 +21,7 @@ export {
   Indicator,
   LevelTag,
   UserPicture,
+  Switch,
   Header,
   LobbyCard,
   LeaderBoard,

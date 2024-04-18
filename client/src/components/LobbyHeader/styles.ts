@@ -48,6 +48,10 @@ export const LobbyHeaderActions = styled.div`
   padding: 10px 0;
   border-radius: 8px;
 
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+
   background-color: ${Colors.backgroundSecondary};
   border: 1px solid rgba(250, 249, 247, 0.08);
 `
@@ -56,19 +60,29 @@ export const GameAction = styled.div`
   display: flex;
   column-gap: 10px;
   padding: 0 15px;
+  cursor: pointer;
 
   border-right: 1px solid rgba(250, 249, 247, 0.08);
+
+  &:hover {
+    img {
+      filter: grayscale(0%);
+    }
+  }
 `
 
 export const GameActionImage = styled.div`
   display: flex;
-  width: 35px;
-  height: 35px;
+  width: 35 px;
+  height: 35 px;
 
   img {
+    transition: 0.3s;
     width: 100%;
     height: 100%;
     object-fit: contain;
+
+    filter: grayscale(100%);
   }
 `
 
@@ -77,10 +91,6 @@ export const GameActionContent = styled.div`
   flex-direction: column;
   justify-content: center;
   row-gap: 4px;
-
-  * {
-    font-family: 'Poppins', sans-serif;
-  }
 
   p {
     font-size: 12px;
@@ -92,12 +102,26 @@ export const GameActionContent = styled.div`
   }
 
   b {
-    cursor: pointer;
-
     font-size: 12px;
     line-height: 12px;
     font-weight: 600;
 
     color: ${Colors.brand};
+  }
+`
+
+export const SwitchAction = styled.div`
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 0 15px;
+
+  p {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    color: ${Colors.fontSecondary};
   }
 `
